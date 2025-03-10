@@ -4,7 +4,7 @@ var intro = {
     title: "Stanford NLP Group",
     // introduction text
     text:
-    "Welcome to the study!<br><br>People use various physical characteristics to describe others all the time. In this study, you will see a total of <strong>40 physical characteristics</strong>, and your task is to provide a rating for each physical characteristic.<br><br>Please pay close attention to the questions, and answer each question carefully. The whole study should take no longer than <strong>10 minutes</strong>.<br><small>If you have any questions or concerns, don't hesitate to contact me at llin001@ucla.edu.</small> ",
+    "Welcome to the study!<br><br>People use various physical characteristics to describe others all the time. In this study, you will see a total of <strong>40 physical characteristics</strong>, and your task is to provide a rating for each physical characteristic.<br><br>Please pay close attention to the questions, and answer each question carefully. The whole study should take no longer than <strong>5 minutes</strong>.<br><small>If you have any questions or concerns, don't hesitate to contact me at llin001@ucla.edu.</small> ",
     legal_info: 
     `<strong>LEGAL INFORMATION</strong><br><br>
 <strong>UNIVERSITY OF CALIFORNIA, LOS ANGELES</strong><br><br>
@@ -24,7 +24,7 @@ Lin Lin & Elisa Kreiss from the Department of Communication at the University of
 You are being asked to participate in this study because the researcher wants to understand how people describe others and make judgments.<br><br>
 
 <strong>HOW LONG WILL THE RESEARCH LAST AND WHAT WILL I NEED TO DO?</strong><br>
-Participation will take a total of about 10 minutes. If you volunteer to participate in this study, the researcher will ask you to do the following:<br>
+Participation will take a total of about 5 minutes. If you volunteer to participate in this study, the researcher will ask you to do the following:<br>
 \u25CF Rate physical characteristics for male, female, and a nonbinary person.<br>
 \u25CF Complete questionnaires about your background.<br><br>
 
@@ -58,7 +58,7 @@ Any data that might carry a risk of potential de-anonymization will be destroyed
 Your data, including de-identified data, may be kept for use in future research.<br><br>
 
 <strong>WILL I BE PAID FOR MY PARTICIPATION?</strong><br>
-You will receive $1.75 for your participation in this study.<br><br>
+You will receive $1 for your participation in this study.<br><br>
 
 <strong>UCLA Office of the Human Research Protection Program (OHRPP):</strong><br>
 If you have questions about your rights as a research subject, or you have concerns or suggestions and you want to talk to someone other than the researchers, you may contact the UCLA OHRPP by phone: (310) 206-2040; by email: <a href='mailto:participants@research.ucla.edu'>participants@research.ucla.edu</a> or by mail: Box 951406, Los Angeles, CA 90095-1406.<br><br>
@@ -157,6 +157,7 @@ var main = {
 
         $("#main").html(
             Mustache.render(viewTemplate, {
+                instruction: `<p id="instruction-text">Please answer the following question:</p>`, // New instruction text
                 q1: question,
                 q1_slider_left: "Not at all",
                 q1_slider_right: "Extremely likely"
@@ -215,7 +216,7 @@ var main = {
         // record trial starting time
         var startingTime = Date.now();
     },
-    trials: 3
+    trials: 40
 };
 
 var postTest = {
@@ -284,7 +285,7 @@ var thanks = {
                 Mustache.render(viewTemplate, {
                     thanksMessage: this.message,
                     extraMessage:
-                        "Please press the button below to confirm that you completed the experiment with Prolific. Your completion code is C6F01LDX.<br />" +
+                        "Please press the button below to confirm that you completed the experiment with Prolific. Your completion code is CFLAWLT4.<br />" +
                         "<a href=" +
                         config_deploy.prolificURL +
                         ' class="prolific-url">Confirm</a>'

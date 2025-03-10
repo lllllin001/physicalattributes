@@ -76,6 +76,12 @@ hr {
     position: relative;
 }
 
+#instruction-text {
+    color: gray;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
 
 /* titles */
 
