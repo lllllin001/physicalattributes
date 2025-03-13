@@ -242,6 +242,8 @@ var postTest = {
             // records the post test info
             exp.global_data.HitCorrect = $("#HitCorrect").val();
             exp.global_data.age = $("#age").val();
+            exp.global_data.gender = $("#gender").val();
+            exp.global_data.gender_other = $("#other-gender").val();
             // exp.global_data.education = $("#education").val();
             exp.global_data.languages = $("#languages").val();
             exp.global_data.enjoyment = $("#enjoyment").val();
