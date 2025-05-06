@@ -150,7 +150,7 @@ var main = {
 
         let person_term = exp.trial_info.main_trials[CT]['person_term'];
         let attribute = exp.trial_info.main_trials[CT]['attribute'];
-        let question = "How likely is it for someone to say that a <strong>" + person_term + "</strong> has <strong>" + attribute + "</strong>?";
+        let question = "How likely is it for a <strong>" + person_term + "</strong> to have <strong>" + attribute + "</strong>?";
 
         // for debugging:
         // let question = "How likely is it for someone to say that a <strong>woman</strong> has <strong>a beard</strong>?"
