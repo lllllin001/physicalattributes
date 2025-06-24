@@ -4,7 +4,7 @@ var intro = {
     title: "Stanford NLP Group",
     // introduction text
     text:
-    "Welcome to the study!<br><br>People use various physical characteristics to describe others all the time. In this study, you will see a total of <strong>40 physical characteristics</strong>, and your task is to provide a rating for each physical characteristic.<br><br>Please pay close attention to the questions, and answer each question carefully. The whole study should take no longer than <strong>5 minutes</strong>.<br><small>If you have any questions or concerns, don't hesitate to contact me at llin001@ucla.edu.</small> ",
+    "Welcome to the study!<br><br>People use various physical characteristics to describe others all the time. In this study, you will see a total of <strong>60 physical characteristics</strong>, and your task is to provide a rating for each physical characteristic.<br><br>Please pay close attention to the questions, and answer each question carefully. The whole study should take no longer than <strong>8 minutes</strong>.<br><small>If you have any questions or concerns, don't hesitate to contact me at llin001@ucla.edu.</small> ",
     legal_info: 
     `<strong>LEGAL INFORMATION</strong><br><br>
 <strong>UNIVERSITY OF CALIFORNIA, LOS ANGELES</strong><br><br>
@@ -24,7 +24,7 @@ Lin Lin & Elisa Kreiss from the Department of Communication at the University of
 You are being asked to participate in this study because the researcher wants to understand how people describe others and make judgments.<br><br>
 
 <strong>HOW LONG WILL THE RESEARCH LAST AND WHAT WILL I NEED TO DO?</strong><br>
-Participation will take a total of about 5 minutes. If you volunteer to participate in this study, the researcher will ask you to do the following:<br>
+Participation will take a total of about 8 minutes. If you volunteer to participate in this study, the researcher will ask you to do the following:<br>
 \u25CF Rate physical characteristics for male, female, and a nonbinary person.<br>
 \u25CF Complete questionnaires about your background.<br><br>
 
@@ -150,7 +150,7 @@ var main = {
 
         let person_term = exp.trial_info.main_trials[CT]['person_term'];
         let attribute = exp.trial_info.main_trials[CT]['attribute'];
-        let question = "How likely is it for a <strong>" + person_term + "</strong> to have <strong>" + attribute + "</strong>?";
+        let question = "How likely is it for someone to say that a <strong>" + person_term + "</strong> has <strong>" + attribute + "</strong>?";
 
         // for debugging:
         // let question = "How likely is it for someone to say that a <strong>woman</strong> has <strong>a beard</strong>?"
@@ -216,7 +216,7 @@ var main = {
         // record trial starting time
         var startingTime = Date.now();
     },
-    trials: 40
+    trials: 60
 };
 
 var postTest = {
