@@ -20,17 +20,17 @@ exp.customize = function() {
     const attention_attributes = attention_checks.map(item => item.attribute);
     const updated_main_trials = all_main_trials.filter(item => !attention_attributes.includes(item.attribute));
 
-    selected_main_trials = _.shuffle(updated_main_trials).slice(0,36);
+    selected_main_trials = _.shuffle(updated_main_trials).slice(0,56);
 
     selected_main_trials.forEach(item => {
         sampled_item = _.shuffle(['woman', 'man', 'nonbinary person'])[0];
         item.person_term = sampled_item;
     });
 
-    selected_main_trials.splice(9, 0, attention_checks[0]);
-    selected_main_trials.splice(19, 0, attention_checks[1]);
-    selected_main_trials.splice(29, 0, attention_checks[2]);
-    selected_main_trials.splice(39, 0, attention_checks[3]);
+    selected_main_trials.splice(14, 0, attention_checks[0]);
+    selected_main_trials.splice(29, 0, attention_checks[1]);
+    selected_main_trials.splice(44, 0, attention_checks[2]);
+    selected_main_trials.splice(59, 0, attention_checks[3]);
     
     console.log("selected_main_trials");
     console.log(selected_main_trials);
