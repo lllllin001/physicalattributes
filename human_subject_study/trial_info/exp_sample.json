@@ -1,152 +1,83 @@
 var main_trials = [
-	{
-		"attribute": 'an androgynous build'
-	},
-	{
-		"attribute": 'an athletic build'
-	},
-	{
-		"attribute": 'a curvy build'
-	},
-	{
-		"attribute": 'a graceful build'
-	},
-	{
-		"attribute": 'a petite build'
-	},
-	{
-		"attribute": 'a willowy build'
-	},
-	{
-		"attribute": 'high cheekbones'
-	},
-	{
-		"attribute": 'dimpled cheeks'
-	},
-	{
-		"attribute": 'a delicate chin'
-	},
-	{
-		"attribute": 'a pointed chin'
-	},
-	{
-		"attribute": 'a clear complexion'
-	},
-	{
-		"attribute": 'a flawless complexion'
-	},
-	{
-		"attribute": 'a freckled complexion'
-	},
-	{
-		"attribute": 'arched eyebrows'
-	},
-	{
-		"attribute": 'defined eyebrows'
-	},
-	{
-		"attribute": 'almond-shaped eyes'
-	},
-	{
-		"attribute": 'big eyes'
-	},
-	{
-		"attribute": 'chocolate-brown eyes'
-	},
-	{
-		"attribute": 'emerald eyes'
-	},
-	{
-		"attribute": 'intense eyes'
-	},
-	{
-		"attribute": 'piercing eyes'
-	},
-	{
-		"attribute": 'a sharp face'
-	},
-	{
-		"attribute": 'an hourglass figure'
-	},
-	{
-		"attribute": 'an angular jawline'
-	},
-	{
-		"attribute": 'a chiseled jawline'
-	},
-	{
-		"attribute": 'a rugged jawline'
-	},
-	{
-		"attribute": 'balanced lips'
-	},
-	{
-		"attribute": 'bow-shaped lips'
-	},
-	{
-		"attribute": 'full lips'
-	},
-	{
-		"attribute": 'plump lips'
-	},
-	{
-		"attribute": 'a kissable mouth'
-	},
-	{
-		"attribute": 'a sensual mouth'
-	},
-	{
-		"attribute": 'a muscular neck'
-	},
-	{
-		"attribute": 'a button nose'
-	},
-	{
-		"attribute": 'a prominent nose'
-	},
-	{
-		"attribute": 'a confident posture'
-	},
-	{
-		"attribute": 'an elegant posture'
-	},
-	{
-		"attribute": 'broad shoulders'
-	},
-	{
-		"attribute": 'ivory skin'
-	},
-	{
-		"attribute": 'olive skin'
-	},
-	{
-		"attribute": 'a bushy beard'
-	},
-	{
-		"attribute": 'a balding crown'
-	},
-	{
-		"attribute": 'curled eyelashes'
-	},
-	{
-		"attribute": 'flowing hair'
-	},
-	{
-		"attribute": 'narrow hips'
-	},
-	{
-		"attribute": 'neutral-toned makeup'
-	},
-	{
-		"attribute": 'painted nails'
-	},
-	{
-		"attribute": 'a shiny scalp'
-	},
-	{
-		"attribute": 'a pierced septum'
-	},
-	{
-		"attribute": 'a shaved sidecut'
-	}
+	{ "attribute": "a square jaw" },
+	{ "attribute": "a round face" },
+	{ "attribute": "a cleft chin" },
+	{ "attribute": "a high forehead" },
+	{ "attribute": "an oval face" },
+	{ "attribute": "a narrow chin" },
+	{ "attribute": "a wide jawline" },
+	{ "attribute": "a soft jawline" },
+	{ "attribute": "a defined chin" },
+	{ "attribute": "hooded eyes" },
+	{ "attribute": "deep-set eyes" },
+	{ "attribute": "narrow eyes" },
+	{ "attribute": "wide-set eyes" },
+	{ "attribute": "downturned eyes" },
+	{ "attribute": "upturned eyes" },
+	{ "attribute": "sleepy eyes" },
+	{ "attribute": "tired-looking eyes" },
+	{ "attribute": "alert eyes" },
+	{ "attribute": "thick eyebrows" },
+	{ "attribute": "bushy eyebrows" },
+	{ "attribute": "straight eyebrows" },
+	{ "attribute": "arched brows" },
+	{ "attribute": "well-groomed eyebrows" },
+	{ "attribute": "heavy-set eyebrows" },
+	{ "attribute": "a small mouth" },
+	{ "attribute": "a wide mouth" },
+	{ "attribute": "a defined cupid’s bow" },
+	{ "attribute": "a downturned mouth" },
+	{ "attribute": "a tight-lipped smile" },
+	{ "attribute": "full cheeks" },
+	{ "attribute": "tousled hair" },
+	{ "attribute": "curly hair" },
+	{ "attribute": "wavy hair" },
+	{ "attribute": "straight hair" },
+	{ "attribute": "dyed hair" },
+	{ "attribute": "colored hair" },
+	{ "attribute": "bleached hair" },
+	{ "attribute": "a buzzed cut" },
+	{ "attribute": "a crew cut" },
+	{ "attribute": "thick hair" },
+	{ "attribute": "frizzy hair" },
+	{ "attribute": "shiny hair" },
+	{ "attribute": "a statuesque build" },
+	{ "attribute": "a slim build" },
+	{ "attribute": "a lean build" },
+	{ "attribute": "a stocky build" },
+	{ "attribute": "a soft build" },
+	{ "attribute": "a burly build" },
+	{ "attribute": "a muscular build" },
+	{ "attribute": "a toned build" },
+	{ "attribute": "a compact frame" },
+	{ "attribute": "a narrow frame" },
+	{ "attribute": "a broad frame" },
+	{ "attribute": "a flat stomach" },
+	{ "attribute": "a strong core" },
+	{ "attribute": "broad shoulders" },
+	{ "attribute": "sloped shoulders" },
+	{ "attribute": "square shoulders" },
+	{ "attribute": "a swan-like neck" },
+	{ "attribute": "a smooth forehead" },
+	{ "attribute": "a furrowed brow" },
+	{ "attribute": "dewy skin" },
+	{ "attribute": "flushed cheeks" },
+	{ "attribute": "rosy cheeks" },
+	{ "attribute": "freckles across the nose" },
+	{ "attribute": "warm-toned skin" },
+	{ "attribute": "blue eyes" },
+	{ "attribute": "double eyelid" },
+	{ "attribute": "mono-brow" },
+	{ "attribute": "blonde" },
+	{ "attribute": "tattoo" },
+	{ "attribute": "pumped lips" },
+	{ "attribute": "a button nose" },
+	{ "attribute": "a straight nose" },
+	{ "attribute": "a broad nose" },
+	{ "attribute": "a pointed chin" },
+	{ "attribute": "a strong jawline" },
+	{ "attribute": "a soft face" },
+	{ "attribute": "a pouty mouth" },
+	{ "attribute": "a defined waist" }
   ];
+  
