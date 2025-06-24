@@ -1,0 +1,18 @@
+var attention_checks = [
+	{
+		"person_term": "man",
+		"attribute": "prominent shoulders"
+	},
+	{
+		"person_term": "woman",
+		"attribute": "painted nails"
+	},
+	{
+		"person_term": "woman",
+		"attribute": "a rugged jawline"
+	},
+	{
+		"person_term": "man",
+		"attribute": "a curvy build"
+	}
+]
